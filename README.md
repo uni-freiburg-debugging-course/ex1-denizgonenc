@@ -5,7 +5,7 @@
 Run these commands while inside the project's root directory:
 
 ```
-./z3/bin/z3 ./fuzz.txt > res1.txt
+z3 ./fuzz.txt > res1.txt
 java -jar ./target/DnF-01.jar ./fuzz.txt > res2.txt
 cmp res1.txt res2.txt
 ```
