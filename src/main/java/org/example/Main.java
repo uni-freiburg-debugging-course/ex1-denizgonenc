@@ -29,7 +29,7 @@ class Main {
 
             }
             else {
-                int result = evaluate(ast.root);
+                long result = evaluate(ast.root);
                 if (result >= 0) System.out.println(result);
                 else System.out.printf("(- %d)%n", -result);
             }

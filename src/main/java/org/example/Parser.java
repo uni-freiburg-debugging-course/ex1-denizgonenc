@@ -56,7 +56,7 @@ class Parser {
         return ast;
     }
 
-    static int evaluate(ASTNode curr) throws Exception {
+    static long evaluate(ASTNode curr) throws Exception {
         if (curr != null) {
             if (curr.intValue != null) {
                 return curr.intValue;
@@ -65,8 +65,8 @@ class Parser {
                 throw new Exception("Parser error: No operands", null);
             }
             else {
-                Integer left = null;
-                Integer right = null;
+                Long left = null;
+                Long right = null;
                 if (curr.left != null) left = evaluate(curr.left);
                 if (curr.right != null) right = evaluate(curr.right);
 
