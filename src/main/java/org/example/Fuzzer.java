@@ -12,7 +12,7 @@ public class Fuzzer {
         try {
             FileWriter myWriter = new FileWriter("fuzz.txt", false);
             Random rand = new Random();
-            for (int i=0; i < 1000; i++) {
+            for (int i=0; i < 100000; i++) {
                 int index = rand.nextInt(tokens.size());
                 myWriter.write(
                     "(simplify (" +
